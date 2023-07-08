@@ -80,9 +80,7 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">JacobiNeRF: NeRF Shaping with Mutual Information Gradient</h1>
-
-          <div class="is-size-5 publication-authors">CVPR 2023</div>
-
+          <h2 class="title is-3">CVPR 2023</h2>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://xxm19.github.io/">Xiaomeng Xu</a><sup>1</sup>,</span>
@@ -178,9 +176,7 @@
             class="interpolation-image"
             alt="Interpolate start reference image."/>
       <h2 class="subtitle has-text-centered">
-        Left: We pursue a subspace of the parameters of an implicit scene representation so that when the scene is perturbed along the gradient of a specific point, a resonance emerges with other points having high mutual information. 
-        For example, if the brightness of a point p on the wall changes, the other wall points should also change coherently (while points on the ceiling should be unaffected). 
-        Right: A comparison between responses to perturbations along the gradient of the highlighted red point in the scene. The response from the original NeRF spreads all over the scene, while the localized response from the proposed JacobiNeRF demonstrates coherence between points with similar semantics.
+        We shape the NeRF so that when the scene is perturbed along the gradient of a point, a resonance emerges with other points having high mutual information.
       </h2>
     </div>
 
@@ -190,7 +186,7 @@
                 type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        JacobiNeRF supports user interactions with 3D Scenes through 2D views – as, for example, in selecting objects or object parts, editing the appearance of scene entities, and propagating labels to the whole 3D scene given sparse annotations. 
+        JacobiNeRF supports user interactions with 3D Scenes through 2D views – as, for example, in selecting objects or parts, editing the appearance of scene entities, and propagating labels to the whole 3D scene given sparse annotations. 
       </h2>
     </div>
   </div>
@@ -231,12 +227,11 @@
 </section>
 
 
-<section class="section">
+<!-- <section class="section">
   <div class="container is-max-desktop">
 
     <div class="columns is-centered">
 
-      <!-- Visual Effects. -->
       <div class="column">
         <div class="content">
           <h2 class="title is-3">Visual Effects</h2>
@@ -250,9 +245,7 @@
           </video>
         </div>
       </div>
-      <!--/ Visual Effects. -->
 
-      <!-- Matting. -->
       <div class="column">
         <h2 class="title is-3">Matting</h2>
         <div class="columns is-centered">
@@ -270,74 +263,9 @@
         </div>
       </div>
     </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
-
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
-
-      </div>
-    </div>
-    <!--/ Animation. -->
 
   </div>
-</section>
+</section> -->
 
 
 <section class="section" id="BibTeX">
