@@ -63,17 +63,8 @@
           More Research
         </a>
         <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
+          <a class="navbar-item" href="https://autogpart.github.io/">
+            AutoGPart
           </a>
         </div>
       </div>
@@ -183,14 +174,23 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
+      <img src="./static/images/teaser.png"
+            class="interpolation-image"
+            alt="Interpolate start reference image."/>
+      <h2 class="subtitle has-text-centered">
+        Left: We pursue a subspace of the parameters of an implicit scene representation so that when the scene is perturbed along the gradient of a specific point, a resonance emerges with other points having high mutual information. 
+        For example, if the brightness of a point p on the wall changes, the other wall points should also change coherently (while points on the ceiling should be unaffected). 
+        Right: A comparison between responses to perturbations along the gradient of the highlighted red point in the scene. The response from the original NeRF spreads all over the scene, while the localized response from the proposed JacobiNeRF demonstrates coherence between points with similar semantics.
+      </h2>
+    </div>
+
+    <div class="hero-body">
       <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
+        <source src="./static/videos/application.mp4"
                 type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
+        JacobiNeRF supports user interactions with 3D Scenes through 2D views – as, for example, in selecting objects or object parts, editing the appearance of scene entities, and propagating labels to the whole 3D scene given sparse annotations. 
       </h2>
     </div>
   </div>
